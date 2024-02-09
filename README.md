@@ -19,6 +19,7 @@ I'm using [Lively](https://www.rocksdanister.com/lively/), its open source and f
 Simply point it to `http://localhost:30000`
 
 # Autorun 
+If you are not ready to run cheldscripts skip this step and do it manually.
 To make this whole thing autorun on boot, there is `install_autorun.bat` and `uninstall_autorun.bat` scripts. <br>
 Open `install_autorun.bat` and edit following variables
 - `NODE_PATH` you can get it by typing `where node` in CMD and it should return you full path, copy it and replace one in script. <br> Example `set NODE_PATH=C:\Users\doomkek\scoop\apps\nodejs\current\node.exe`
@@ -49,7 +50,7 @@ and in `server.js` one of the first lines `const port = 30000;` <br>
 Its harder to do than I thought, there are some places where you should go and manually change port, if thats the case look for port 30000 in files and replace it.
 
 ## Wallpaper 
-Currently there are 2 screens that can be used without braking anything `scene_home_green` for CR and `scene_home_red` for Gaming, change to whatever you prefer.
+Currently there are 2 screens that can be used without braking anything `scene_home_green` for CR and `scene_home_red` for Gaming, open `e20240208lantern\index.html` and change to whatever you prefer.
 ```js  
 ultraGlobal = {
     wallpaper: "scene_home_green"
