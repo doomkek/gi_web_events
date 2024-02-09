@@ -7,7 +7,7 @@ Currently only [Dancing Beasts and Soaring Kites](https://act.hoyoverse.com/ys/e
 1. Download and install [nodejs](https://nodejs.org/en) 
 2. Check that nodejs is installed, open CMD and type `node`, it should reply with "Welcome to Node.js v21.6.0."
 3. Download this repository ~40mb<br>
-<img src="https://github.com/doomkek/gi_web_events/assets/141933494/c97d65cf-794e-4e80-8d91-3b5591ffc572" height="250">
+<img src="https://github.com/doomkek/gi_web_events/assets/141933494/c97d65cf-794e-4e80-8d91-3b5591ffc572" height="250"><br>
 4. Extract into any folder 
 5. Open CMD and navigate to folder with extracted repository (cd "C:\Projects\gi_web_events")
 6. In CMD execute `npm install`, it should restore dependencies, you should see folder `node_modeules` being created
@@ -39,12 +39,14 @@ Open `e20240208lantern\public\images` find relevant image and modify it, if you 
 
 ## Port
 If for whatever reson you need to change hosting port, open `e20240208lantern\index.html` and find following text and change 30000 to whatever you need.
+
 ```js  
 ultraGlobal = {
     host: "http://localhost:30000"
 };
 ```
-and in `server.js` one of the first lines `const port = 30000;`
+and in `server.js` one of the first lines `const port = 30000;` <br>
+Its harder to do than I thought, there are some places where you should go and manually change port, if thats the case look for port 30000 in files and replace it.
 
 ## Wallpaper 
 Currently there are 2 screens that can be used without braking anything `scene_home_green` for CR and `scene_home_red` for Gaming, change to whatever you prefer.
