@@ -14,6 +14,10 @@ app.use('/bh3_global/20190812_5d51512fdef47', express.static(path.join(__dirname
 app.use('/admin/mi18n/plat_oversea/m05302259261621', express.static(path.join(__dirname, eventName, 'public', 'bh3_global', '20190812_5d51512fdef47')));
 app.use('/admin/mi18n/bh3_global', express.static(path.join(__dirname, eventName, 'public', 'bh3_global' )));
 app.use('/admin/mi18n/plat_os', express.static(path.join(__dirname, eventName, 'public', 'bh3_global')));
+app.use('/mi18n/hk4e_global/m20240102hy37ffsnb4', express.static(path.join(__dirname, eventName, 'public', 'hk4e_global', 'm20240102hy37ffsnb4')));
+app.use('/mi18n/hk4e_global/m20240102hy37ffsnb4/upload', express.static(path.join(__dirname, eventName, 'public', 'hk4e_global', 'm20240102hy37ffsnb4', 'upload')));
+app.use('/font_generate', express.static(path.join(__dirname, eventName, 'public', 'font_generate')));
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, eventName, 'index.html'));
