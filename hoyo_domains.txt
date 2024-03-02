@@ -1,0 +1,32 @@
+List with examples of hoyo domains and resources
+
+https://act.hoyoverse.com/ys/event/e20230224dehya-tilwsu/images/experience_modal_fg.841a0ca9..png
+https://act.hoyoverse.com/ys/event/e20230224dehya-tilwsu/medias/bgm.02d5136a..mp3
+
+https://fastcdn.hoyoverse.com/static-resource-v2/2023/09/06/962eb059b0fb721e0b63ad0f47f2c61b_1395560686883174803.png
+
+https://webstatic.hoyoverse.com/admin/mi18n/hk4e_global/m20230207hy1433e2gw/m20230207hy1433e2gw-en-us.json
+https://webstatic.hoyoverse.com/admin/mi18n/bh3_global/20190812_5d51512fdef47/20190812_5d51512fdef47-en-us.json
+https://webstatic.hoyoverse.com/admin/mi18n/plat_oversea/m05302259261621/m05302259261621-en-us.json
+https://webstatic.hoyoverse.com/admin/mi18n/hk4e_global/m20230419hy34t22mm8/m20230419hy34t22mm8-en-us.json
+
+
+
+ultraGlobal.host
+
+
+vendors
+- "https://webstatic.hoyoverse.com" -> ultraGlobal.host
+- "https://webstatic.hoyoverse.com/admin/mi18n" -> ultraGlobal.host + "/admin/mi18n"
+- "https://webstatic.hoyoverse.com/admin/mi18n/plat_os/" -> ultraGlobal.host + "/admin/mi18n/plat_os/"
+- "IS_SEA: function()" change return xx to return true
+
+index
+- "https://sg-hk4e-api.hoyoverse.com/event/merlin_v2/v3/flow/run/" -> ultraGlobal.host + "/event/merlin_v2/v3/flow/run/"
+
+
+to disable audio 
+vendors.js assign false to all "_muted ="
+
+to disable cookie message
+styles_23123312.css  .mihoyo-cookie-tips{display: none !important; 
