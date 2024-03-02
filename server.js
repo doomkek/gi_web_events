@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const eventName = 'e20230302preview';
+const eventName = 'e20231028preview';
 const eventPostMap = {
     e20240208lantern: 30000,
     e20231028preview: 30001,

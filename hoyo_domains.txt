@@ -26,7 +26,7 @@ index
 
 
 to disable audio 
-vendors.js assign false to all "_muted ="
+vendors.js assign true to all "_muted ="
 
 to disable cookie message
 styles_23123312.css  .mihoyo-cookie-tips{display: none !important; 
