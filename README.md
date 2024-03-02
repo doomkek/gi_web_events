@@ -11,8 +11,13 @@ Currently only [Dancing Beasts and Soaring Kites](https://act.hoyoverse.com/ys/e
 4. Extract into any folder 
 5. Open CMD and navigate to folder with extracted repository (cd "C:\Projects\gi_web_events")
 6. In CMD execute `npm install`, it should restore dependencies, you should see folder `node_modeules` being created
-7. Execute `npm start`, you should see `Server is running on http://localhost:30000`
-8. Navigate to [http://localhost:30000](http://localhost:30000)
+7. Open `server.js` file and modify following row (line ~5)`const eventName = 'e20230302preview';`, replace `e20230302preview` the name of the event from table below
+    |Wallpaper|Value|
+   | ------------- | ------------- |
+    |Cloud Retainer|e20240208lantern|
+    |Chiori|e20230302preview|
+9. Execute `npm start`, you should see `Server is running on http://localhost:30000`
+10. Navigate to [http://localhost:30000](http://localhost:30000)
 
 # How to use as a wallpaper 
 I'm using [Lively](https://www.rocksdanister.com/lively/), its open source and free, should work with any similar tool that allow you to use web page url as wallpaper.
@@ -36,27 +41,15 @@ Verify that it was installed <br>
 
 # Customization
 ## Removing/editing assets
-Open `e20240208lantern\public\images` find relevant image and modify it, if you want to remove something, make picture invisible (don't change resolution).
+Open `{eventName}\public\images` find relevant image and modify it, if you want to remove something, make picture invisible (don't change resolution).
 
-## Port
-If for whatever reson you need to change hosting port, open `e20240208lantern\index.html` and find following text and change 30000 to whatever you need.
-
-```js  
-ultraGlobal = {
-    host: "http://localhost:30000"
-};
-```
-and in `server.js` one of the first lines `const port = 30000;` <br>
-Its harder to do than I thought, there are some places where you should go and manually change port, if thats the case look for port 30000 in files and replace it.
-
-## Wallpaper 
+## Wallpaper (only for e20240208lantern event)
 Currently there are 2 screens that can be used without braking anything `scene_home_green` for CR and `scene_home_red` for Gaming, open `e20240208lantern\index.html` and change to whatever you prefer.
 ```js  
 ultraGlobal = {
     wallpaper: "scene_home_green"
 };
 ```
-
 
 # Privacy
 Everything except for `server.js` file is original, you can inspect it to verify that it does not do anything shady, its just a web server with bunch of mock routes that are needed for web event to work properly (load necessary animated screens not actually work).
